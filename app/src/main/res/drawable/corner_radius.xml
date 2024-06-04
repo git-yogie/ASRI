@@ -1,0 +1,5 @@
+<!-- File: res/drawable/rounded_corners.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/black"/> <!-- Anda bisa mengganti warna ini -->
+    <corners android:radius="10dp"/> <!-- Anda bisa mengganti radius ini -->
+</shape>

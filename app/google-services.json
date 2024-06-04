@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859989936264",
+    "project_id": "asri-39cd3",
+    "storage_bucket": "asri-39cd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859989936264:android:4c3843d215d44ff9bbf73d",
+        "android_client_info": {
+          "package_name": "com.yogie.anemiaapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDepoBcaXIPVBbQLe0ajc76Tx6Dgq8y7O8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

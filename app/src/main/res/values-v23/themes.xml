@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AnemiaApps" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/cream</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+
+        <!-- Customize your theme here. -->
+<!--        active bottom navbar-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorOnPrimary">@color/red</item>
+        <item name="colorSecondary">@color/cream</item>
+        <item name="colorOnSecondary">@color/cream</item>
+        <item name="colorTertiary">@color/black</item>
+        <item name="colorOnTertiary">@color/black</item>
+
+        <item name="android:fontFamily">@font/nunito_regular</item>
+
+
+    </style>
+
+
+</resources>

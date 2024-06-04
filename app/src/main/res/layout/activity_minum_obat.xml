@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/overlay"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="2dp"
+        android:text="Kembali"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:icon="@drawable/round_arrow_back_24"
+        app:iconTint="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="18dp"
+            android:layout_margin="13dp"
+            android:layout_alignParentEnd="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_jadwal"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/baseline_access_time_filled_24"
+                    app:tint="@color/pink" />
+
+                <TextView
+                    android:id="@+id/tv_waktu_berjalan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_jadwal"
+                    android:text="15.00"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:id="@+id/waktu_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp">
+
+                <ImageView
+                    android:id="@+id/iv_jadwal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/baseline_access_time_filled_24"
+                    app:tint="@color/pink" />
+
+                <TextView
+                    android:id="@+id/tv_waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_jadwal2"
+                    android:text="15.00"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_jadwal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:text="Siang"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_obat_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waktu_2"
+                android:layout_toEndOf="@+id/iv_obat_2"
+                android:text="Pil Cantik"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_obat_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/waktu_2"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/baseline_medication_24"
+                app:tint="@color/pink" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/image_capture_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        android:text="Ambil Bukti"
+        android:layout_alignParentBottom="true"
+        app:icon="@drawable/baseline_camera_24"
+        app:iconTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_image"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+
+            android:elevation="2dp"
+            app:icon="@drawable/baseline_image_24"
+            app:iconTint="@color/white"
+            android:text="Pilih gambar"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/change_camera_button"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:icon="@drawable/baseline_cameraswitch_24"
+            app:iconTint="@color/white"
+            android:text="Ganti kamera"
+
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        app:icon="@drawable/baseline_file_upload_24"
+        app:iconTint="@color/white"
+        android:text="Simpan"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/take_again"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="2dp"
+        app:icon="@drawable/baseline_camera_24"
+        app:iconTint="@color/white"
+        android:text="Ulangi"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_waktu_minum_obat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Waktu minum obat 15.00"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
